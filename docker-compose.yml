@@ -1,0 +1,15 @@
+services:
+  surrealdb:
+    container_name: surrealdb
+    image: surrealdb/surrealdb:latest
+    command: start --log info file://database.db
+    ports:
+      - "8000:8000"
+    volumes:
+      - type: volume
+        source: dbdata
+        target: /database.db
+    user: root
+
+volumes:
+  dbdata:
