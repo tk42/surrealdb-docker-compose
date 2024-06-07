@@ -2,7 +2,7 @@ services:
   surrealdb:
     container_name: surrealdb
     image: surrealdb/surrealdb:latest
-    command: start --log info file://database.db
+    command: start --log info --auth file://database.db
     ports:
       - "8000:8000"
     volumes:
