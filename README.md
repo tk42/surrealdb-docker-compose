@@ -16,3 +16,6 @@ ln -sf /var/lib/google/docker-compose \
   ~/.docker/cli-plugins/docker-compose
 docker compose version
 ```
+
+### Multinode config
+See [here](https://github.com/surrealdb/docker.surrealdb.com/)
